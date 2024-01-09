@@ -31,7 +31,11 @@ For to reach target stage from current stage 3 notebooks created as named
   * New_user Table
   * Session_started Table
   * Ship_transaction Table
-* Golden_Layer_Notebook 
+* Golden_Layer_Notebook (Created Data Model for BI tool (Star Schema)) and (Table/Views holding Metrics/KPIs defined below)
+
+# Flow Diagrams
+
+Markup : ![picture alt]("C:\Users\Admin\Desktop\task\Diagram\Data_Model-Page-2.drawio.png")
 
 
 ## General Metrics
