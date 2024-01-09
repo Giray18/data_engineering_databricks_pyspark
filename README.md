@@ -13,15 +13,26 @@ Tables belongs to gaming domain on app user and game activities
 * SHIP_TRANSACTION_LOG (Covers in game ship buy-purchase-trade data from users items)
 
 # Current Stage:
-Based on DDL sql script shared with faker package some fake source tables created with notebook called "Bronze_Layer_Notebook".
-For to use 
+Based on DDL sql script shared, with using python faker package some fake data holding source tables created with notebook called "Bronze_Layer_Notebook".
+Further steps applied on mentioned source tables for further steps.
 
 # Target Stage:
-Intention is to create 3 tier architecture on delta lakehouse architecture.
+Intention is to create 3 tier architecture on delta lakehouse architecture. All tables created on transformations will be saved to DBFS (Databricks File System) as managed table)
 * Bronze layer will hold ingested tables as raw data format
 * Silver layer will hold cleaned and relatively normalized tables as close as It can get to 3NF
 * Gold layer will hold analytics datawarehouse formatted tables and aggregated views as business requirements mentioned below.
   * All metrics are requested to be calculated by time periods required as Daily,Monthly and Weekly (Prefilters final fact table before metrics calculated)
+For to reach target stage from current stage 3 notebooks created as named
+* Bronze_Layer_Notebook (Ingestion to Bronze Layer Schema)
+* Silver_Layer_Notebook (Created Normalized Tables -  Deduplicated tables by unique value holding fields)
+ * IN_APP_PURCHASE Table
+ * LOGIN Table
+ * Multiplayer_Battle Table
+ * New_user Table
+ * Session_started Table
+ * Ship_transaction Table
+* Golden_Layer_Notebook 
+
 
 ## General Metrics
 * Active Users: Unique User count exists on f_multi_ships table based on field named "Session_User_Id"
@@ -45,9 +56,9 @@ Intention is to create 3 tier architecture on delta lakehouse architecture.
 * Amount of days before first purchase date of users: User day count before their first purchase date (Between their registration date and first purchase date)
 * Daily revenue per user: IN_APP item cost sum per User -- IN_APP_USD_COST field sum grouped by USER_ID for last 1 day
 * Weekly revenue per user: IN_APP item cost sum per User -- IN_APP_USD_COST field sum grouped by USER_ID for last 7 day
-Monthly revenue per user: IN_APP item cost sum per User -- IN_APP_USD_COST field sum grouped by USER_ID for last 30 day
+* Monthly revenue per user: IN_APP item cost sum per User -- IN_APP_USD_COST field sum grouped by USER_ID for last 30 day
 
 ## Battle analysis
-New users participation in battles since 1/3/7/14 days since registration: User table with battle participation count as daily
-Active users battle participations of all times: User table with battle participation count as daily
+* New users participation in battles since 1/3/7/14 days since registration: User table with battle participation count as daily
+* Active users battle participations of all times: User table with battle participation count as daily
 
