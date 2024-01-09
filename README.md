@@ -18,10 +18,10 @@ For to use
 
 # Target Stage:
 Intention is to create 3 tier architecture on delta lakehouse architecture.
-1.Bronze layer will hold ingested tables as raw data format
-2.Silver layer will hold cleaned and relatively normalized tables as close as It can get to 3NF
-3.Gold layer will hold analytics datawarehouse formatted tables and aggregated views as business requirements mentioned below.
-  i. All metrics are requested to be calculated by time periods required as Daily,Monthly and Weekly (Prefilters final fact table before metrics calculated)
+* Bronze layer will hold ingested tables as raw data format
+* Silver layer will hold cleaned and relatively normalized tables as close as It can get to 3NF
+* Gold layer will hold analytics datawarehouse formatted tables and aggregated views as business requirements mentioned below.
+  * All metrics are requested to be calculated by time periods required as Daily,Monthly and Weekly (Prefilters final fact table before metrics calculated)
 
 ## General Metrics
 Active Users: Unique User count exists on f_multi_ships table based on field named "Session_User_Id"
