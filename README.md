@@ -70,7 +70,7 @@ For to reach target stage from current stage 3 notebooks created as named
 
 # Activation of Notebooks
 In case there is a databricks subscription only by activation of starter notebook is enough to all notebooks and codes to be run and populate designed schemas/tables.
-![picture alt](notebooks_run.png.png)
+![picture alt](notebooks_run.png)
 
 
 
