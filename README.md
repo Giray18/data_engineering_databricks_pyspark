@@ -35,7 +35,7 @@ For to reach target stage from current stage 3 notebooks created as named
 
 # Flow Diagrams
 
-Markup : ![picture alt]("C:\Users\Admin\Desktop\task\Diagram\Data_Model-Page-2.drawio.png")
+Markup : ![picture alt](C:\Users\Admin\Desktop\task\Diagram\Data_Model-Page-2.drawio.png)
 
 
 ## General Metrics
