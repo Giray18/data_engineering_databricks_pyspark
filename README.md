@@ -25,12 +25,12 @@ Intention is to create 3 tier architecture on delta lakehouse architecture. All 
 For to reach target stage from current stage 3 notebooks created as named
 * Bronze_Layer_Notebook (Ingestion to Bronze Layer Schema)
 * Silver_Layer_Notebook (Created Normalized Tables -  Deduplicated tables by unique value holding fields)
- * IN_APP_PURCHASE Table
- * LOGIN Table
- * Multiplayer_Battle Table
- * New_user Table
- * Session_started Table
- * Ship_transaction Table
+  * IN_APP_PURCHASE Table
+  * LOGIN Table
+  * Multiplayer_Battle Table
+  * New_user Table
+  * Session_started Table
+  * Ship_transaction Table
 * Golden_Layer_Notebook 
 
 
