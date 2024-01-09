@@ -33,7 +33,7 @@ For to reach target stage from current stage 3 notebooks created as named
   * Ship_transaction Table
 * Golden_Layer_Notebook (Created Data Model for BI tool (Star Schema)) and (Table/Views holding Metrics/KPIs defined below)
 
-# Flow Diagrams
+# Flow Diagrams (Shows steps applied on notebooks)
 
 ![picture alt](Data_Model-Page-2.drawio.png)
 
