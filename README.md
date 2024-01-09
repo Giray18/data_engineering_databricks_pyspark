@@ -37,6 +37,8 @@ For to reach target stage from current stage 3 notebooks created as named
 
 ![picture alt](Data_Model-Page-2.drawio.png)
 
+# Golden Layer Datamodel (Some columns hidden due to downsize schema view)
+![picture alt](Data_Model_Short.png)
 
 ## General Metrics
 * Active Users: Unique User count exists on f_multi_ships table based on field named "Session_User_Id"
